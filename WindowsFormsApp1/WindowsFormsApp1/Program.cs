@@ -16,7 +16,12 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 fl = new Form1();
+            fl.ShowDialog();
+            if (fl.DialogResult == DialogResult.OK)
+            {
+                Application.Run(new Form2());
+            }
         }
     }
 }

@@ -77,6 +77,8 @@ namespace WindowsFormsApp1
                 {
                     this.label6.Text = Properties.Resource.tips_login_success;
                     resetForm();
+                    this.DialogResult = DialogResult.OK;    //返回一个登录成功的对话框状态
+                    this.Close();    //关闭登录窗口
                 }
             }
         }
@@ -133,6 +135,7 @@ namespace WindowsFormsApp1
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
+            captchaStr = "";
         }
     }
 }
