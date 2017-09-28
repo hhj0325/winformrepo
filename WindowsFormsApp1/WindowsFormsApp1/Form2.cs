@@ -16,10 +16,28 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 登出
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+        /// <summary>
+        /// 关闭、退出
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString();
         }
     }
 }
