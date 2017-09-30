@@ -16,14 +16,15 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 fl = new Form1();
-            fl.ShowDialog();
-            if (fl.DialogResult == DialogResult.OK)
-            {
-                Application.Run(new Form2());
-            }
 
-//            Application.Run(new Form2());
+//            Form1 fl = new Form1();
+//            fl.ShowDialog();
+//            if (fl.DialogResult == DialogResult.OK)
+//            {
+//                Application.Run(new Form2());
+//            }
+
+            Application.Run(new Form2());
         }
     }
 }
